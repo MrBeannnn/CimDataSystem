@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="nunit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ESWIN.Cache\ESWIN.Cache.Factory\ESWIN.Cache.Factory.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Util\ESWIN.Util\ESWIN.Util.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Business\ESWIN.Business.AutoJob\ESWIN.Business.AutoJob.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Business\ESWIN.Business\ESWIN.Business.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Data\ESWIN.Data.EF\ESWIN.Data.EF.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Entity\ESWIN.Entity\ESWIN.Entity.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Entity\ESWIN.Model\ESWIN.Model.csproj" />
+  </ItemGroup>
+
+</Project>

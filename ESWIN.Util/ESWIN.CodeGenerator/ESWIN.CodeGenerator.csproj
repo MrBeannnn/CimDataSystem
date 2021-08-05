@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ESWIN.Business\ESWIN.Business.Cache\ESWIN.Business.Cache.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Data\ESWIN.Data.Repository\ESWIN.Data.Repository.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Entity\ESWIN.Entity\ESWIN.Entity.csproj" />
+    <ProjectReference Include="..\ESWIN.Util\ESWIN.Util.csproj" />
+  </ItemGroup>
+
+</Project>

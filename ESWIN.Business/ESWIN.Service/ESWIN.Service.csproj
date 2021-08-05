@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ESWIN.Data\ESWIN.Data.Repository\ESWIN.Data.Repository.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Entity\ESWIN.Entity\ESWIN.Entity.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Entity\ESWIN.Enum\ESWIN.Enum.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Entity\ESWIN.Model\ESWIN.Model.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Util\ESWIN.IdGenerator\ESWIN.IdGenerator.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Util\ESWIN.Util\ESWIN.Util.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ToolManage\" />
+  </ItemGroup>
+
+</Project>

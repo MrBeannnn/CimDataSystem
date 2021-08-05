@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyVersion>3.1.0.0</AssemblyVersion>
+    <FileVersion>3.1.0.0</FileVersion>
+    <Company>ESWIN.Admin.Web</Company>
+    <Authors>ESWIN.Admin.Web</Authors>
+    <Product>ESWINAdmin</Product>
+    <Copyright>ESWINAdmin</Copyright>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <AssemblyName>ESWIN.Admin.Web</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="dotnet_run.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BuildBundlerMinifier" Version="3.2.435" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ESWIN.Business\ESWIN.Business.AutoJob\ESWIN.Business.AutoJob.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Business\ESWIN.Business\ESWIN.Business.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Data\ESWIN.Data.EF\ESWIN.Data.EF.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Entity\ESWIN.Entity\ESWIN.Entity.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Entity\ESWIN.Model\ESWIN.Model.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Util\ESWIN.CodeGenerator\ESWIN.CodeGenerator.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Util\ESWIN.Util\ESWIN.Util.csproj" />
+    <ProjectReference Include="..\ESWIN.Web.Code\ESWIN.Web.Code.csproj" />
+  </ItemGroup>
+</Project>

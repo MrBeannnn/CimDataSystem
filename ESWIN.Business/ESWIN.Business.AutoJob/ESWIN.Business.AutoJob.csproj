@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Quartz" Version="3.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ESWIN.Entity\ESWIN.Entity\ESWIN.Entity.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Util\ESWIN.Util\ESWIN.Util.csproj" />
+    <ProjectReference Include="..\ESWIN.Business\ESWIN.Business.csproj" />
+    <ProjectReference Include="..\ESWIN.Service\ESWIN.Service.csproj" />
+  </ItemGroup>
+
+</Project>

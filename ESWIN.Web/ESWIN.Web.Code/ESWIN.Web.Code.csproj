@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>ESWIN.Web.Code</AssemblyName>
+    <RootNamespace>ESWIN.Web.Code</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ESWIN.Cache\ESWIN.Cache.Factory\ESWIN.Cache.Factory.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Data\ESWIN.Data.Repository\ESWIN.Data.Repository.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Util\ESWIN.Util\ESWIN.Util.csproj" />
+  </ItemGroup>
+  
+</Project>

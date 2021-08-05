@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ESWIN.Util\ESWIN.Util\ESWIN.Util.csproj" />
+    <ProjectReference Include="..\ESWIN.Data.EF\ESWIN.Data.EF.csproj" />
+    <ProjectReference Include="..\ESWIN.Data\ESWIN.Data.csproj" />
+  </ItemGroup>
+
+</Project>

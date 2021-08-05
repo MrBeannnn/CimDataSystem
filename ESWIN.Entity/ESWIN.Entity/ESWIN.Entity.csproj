@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="ToolManage\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ESWIN.Util\ESWIN.IdGenerator\ESWIN.IdGenerator.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Util\ESWIN.Util\ESWIN.Util.csproj" />
+    <ProjectReference Include="..\..\ESWIN.Web\ESWIN.Web.Code\ESWIN.Web.Code.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>ESWIN.Cache.Factory</AssemblyName>
+    <RootNamespace>ESWIN.Cache.Factory</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ESWIN.Util\ESWIN.Util\ESWIN.Util.csproj" />
+    <ProjectReference Include="..\ESWIN.Cache.Interface\ESWIN.Cache.Interface.csproj" />
+    <ProjectReference Include="..\ESWIN.MemoryCache\ESWIN.MemoryCache.csproj" />
+    <ProjectReference Include="..\ESWIN.RedisCache\ESWIN.RedisCache.csproj" />
+  </ItemGroup>
+
+</Project>
