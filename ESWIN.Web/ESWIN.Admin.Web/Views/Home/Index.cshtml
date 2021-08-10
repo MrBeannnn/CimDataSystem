@@ -5,6 +5,7 @@
 
     OperatorInfo operatorInfo = ViewBag.OperatorInfo;
     String portrait = operatorInfo.Portrait;
+    string logoUrl = Url.Content("~/image/logo.png");
     if (portrait == null || string.IsNullOrEmpty(portrait))
     {
         portrait = Url.Content("~/image/portrait.png");
@@ -24,7 +25,7 @@
         </div>
         <div class="sidebar-collapse">
             <ul class="nav" id="side-menu">
-                <li class="logo">数据监控平台</li>
+                <li class="logo"> <img alt="image" src='@logoUrl' class="img-fluid" height="50" width="50" /> 测试测试平台</li>
                 <li class="nav-header">
                     <div class="dropdown profile-element clear">
                         <div class="image-left">
