@@ -22,6 +22,7 @@
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.435" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,5 +34,10 @@
     <ProjectReference Include="..\..\ESWIN.Util\ESWIN.CodeGenerator\ESWIN.CodeGenerator.csproj" />
     <ProjectReference Include="..\..\ESWIN.Util\ESWIN.Util\ESWIN.Util.csproj" />
     <ProjectReference Include="..\ESWIN.Web.Code\ESWIN.Web.Code.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\DataManage\Data\" />
+    <Folder Include="Areas\DataManage\Models\" />
   </ItemGroup>
 </Project>
