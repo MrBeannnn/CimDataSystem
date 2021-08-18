@@ -8,32 +8,38 @@
     @BundlerHelper.Render(HostingEnvironment.ContentRootPath, Url.Content("~/lib/fileinput/5.0.3/js/fileinput.min.js"))
 }
 
-<div class="wrapper wrapper-content animated fadeInRight">
+<div class="wrapper wrapper-content animated fadeIn">
     <div class="row">
-        <div class="col-sm-12">
-            <div class="ibox float-e-margins">
+        <div class="col-lg-10">
+            <div class="ibox">
                 <div class="ibox-title">
-                    <h5>数据上传</h5>
+                    <h5>QA数据导入 </h5>
                 </div>
                 <div class="ibox-content">
-                    <div class="form-group">
-                        <label class="font-noraml">Excel</label>
-                        <div class="file-loading">
-                            <input id="fileinput-demo-1" type="file">
+                    <div class="row">
+                        <div class="col-sm-offset-0">
+                            <div class="panel panel-success">
+                                <div class="panel-heading">
+                                    <i class="fa fa-info-circle"></i> Excel数据导入
+                                </div>
+                                <div class="panel-body">
+                                    <form id="form" method="post" enctype="multipart/form-data" asp-action="Import">
+                                        <div class="input-group">
+                                            <input id="file_url" name="excelfile" type="file" class="form-control" placeholder="请选择文件">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-info" type="submit">导入</button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+     </div>
 </div>
 
 <script type="text/javascript">
-        $(document).ready(function () {
-        $("#fileinput-demo-1").fileinput({
-            language: 'zh',
-            'uploadUrl': '@GlobalContext.SystemConfig.ApiSite' + '/File/UploadFile?fileModule=@UploadFileType.News.ParseToInt()',
-            showPreview: false
-        });
-    });
 </script>
