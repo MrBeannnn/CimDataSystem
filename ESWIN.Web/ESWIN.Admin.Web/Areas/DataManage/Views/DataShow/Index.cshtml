@@ -42,4 +42,17 @@
 </div>
 
 <script type="text/javascript">
+    $(function () {
+        if ('@ViewData["upResult"]'=='成功') {
+            ys.msgSuccess('成功');
+        }
+        else if ('@ViewData["upResult"]'.length == 0) {
+
+        }
+        else {
+            ys.msgError('@ViewData["upResult"]');
+        }
+    });
+
+
 </script>

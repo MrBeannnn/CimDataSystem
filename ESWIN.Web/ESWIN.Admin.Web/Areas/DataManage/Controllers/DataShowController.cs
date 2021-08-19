@@ -27,8 +27,13 @@ namespace ESWIN.Admin.Web.Areas.DataManage.Controllers
             _hostingEnvironment = hostingEnvironment;
         }
         [AuthorizeFilter("DataManage:Index")]
-        public IActionResult Index()
+        public IActionResult Index(string upResult = "")
         {
+            if (!string.IsNullOrWhiteSpace(upResult))
+            {
+                ViewData["upResult"] = upResult;
+                string i = ViewData["upResult"].ToString();
+            }
             return View();
         }
         //导入功能
@@ -74,13 +79,14 @@ namespace ESWIN.Admin.Web.Areas.DataManage.Controllers
                             }
                         }
                     }
-                    return Content(" <script>alert('请先登录');history.go(-1);</script>");
-                    
+                    return RedirectToAction("Index", "DataShow", new { upResult = "成功" });
+                    //return Content("alert('操作成功')", "application/x-javascript");
+
                 }
             }
             catch (Exception ex)
             {
-                return Content(ex.Message);
+                return RedirectToAction("Index", "DataShow", new { upResult = "系统异常，请联系管理员" });
             }
         }
     }
